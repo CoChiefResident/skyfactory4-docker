@@ -24,7 +24,7 @@ docker run -d --name sf4 \
            -v /home/core/sf4/ops.json:/minecraft/ops.json \
            -v /home/core/sf4/server.properties:/minecraft/server.properties \
            -v /home/core/sf4/whitelist.json:/minecraft/whitelist.json \
-           --restart always \
+           --restart unless-stopped \
            -p 25565:25565 \
            cochief/skyfactory4
 ```
